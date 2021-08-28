@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from './components/common';
-import { Splash, Social } from './components/sections';
+import { Splash, Community } from './components/sections';
 import styles from './app.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,7 +14,7 @@ function App(): JSX.Element {
         <div>About - blurb with video</div>
         <div>Tokenomics - bullet rules with diagram</div>
         <div>Roadmap</div>
-        <Social />
+        <Community />
       </main>
     </div>
   );

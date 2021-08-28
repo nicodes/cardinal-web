@@ -1,4 +1,4 @@
 import Header from './header/Header';
-import SocialLinks from './socialLinks/SocialLinks';
+import CommunityLinks from './communityLinks/CommunityLinks';
 
-export { Header, SocialLinks };
+export { Header, CommunityLinks };

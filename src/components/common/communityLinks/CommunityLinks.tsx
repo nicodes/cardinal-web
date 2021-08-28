@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './socialLinks.module.scss';
+import styles from './communityLinks.module.scss';
 
-function SocialLinks(): JSX.Element {
+function CommunityLinks(): JSX.Element {
   return (
-    <div className={styles.socialLinks}>
+    <div className={styles.CommunityLinks}>
       {/* TODO vanity link */}
       <a href='https://discord.gg/GBSUgEGj/'>
         <img
@@ -39,4 +39,4 @@ function SocialLinks(): JSX.Element {
   );
 }
 
-export default SocialLinks;
+export default CommunityLinks;

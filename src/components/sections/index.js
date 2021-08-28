@@ -1,4 +1,4 @@
 import Splash from './splash/Splash';
-import Social from './social/Social';
+import Community from './community/Community';
 
-export { Splash, Social };
+export { Splash, Community };
