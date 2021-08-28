@@ -1,18 +1,18 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
+
 import styles from './splash.module.scss';
+import logo from '../../../assets/logo.png';
 
 function Social(): JSX.Element {
   return (
     <div className={styles.splash}>
       <h1>Cardinal Token</h1>
-      <h2>Cardinals Soar</h2>
-
-      <h3>How to Buy</h3>
-      <ul>
-        <li>Buy on Cardano</li>
-        <li>Uniswap</li>
-        <li>BSC</li>
-      </ul>
+      <img src={logo} />
+      <div className={styles.buttons}>
+        <Button variant='primary'>Buy Now</Button>
+        <Button variant='primary'>Dashboard</Button>
+      </div>
     </div>
   );
 }

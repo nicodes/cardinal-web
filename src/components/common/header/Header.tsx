@@ -16,9 +16,14 @@ function Header(): JSX.Element {
 
       <SocialLinks />
       <DropdownButton id='dropdown-basic-button' title='Dropdown button'>
-        <Dropdown.Item href='#/action-1'>Buy</Dropdown.Item>
+        <Dropdown.Item href='#/action-3'>Buy</Dropdown.Item>
         <Dropdown.Item href='#/action-2'>About</Dropdown.Item>
-        <Dropdown.Item href='#/action-3'>Price</Dropdown.Item>
+        <Dropdown.Item href='#/action-2'>Tokenomics</Dropdown.Item>
+        <Dropdown.Item href='#/action-3'>Roadmap</Dropdown.Item>
+        <Dropdown.Item href='#/action-3'>Community</Dropdown.Item>
+        <Dropdown.Divider />
+        <Dropdown.Item href='#/action-3'>Dashboard</Dropdown.Item>
+        <Dropdown.Item href='#/action-3'>Whitepaper</Dropdown.Item>
       </DropdownButton>
     </header>
   );

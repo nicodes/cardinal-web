@@ -10,9 +10,9 @@ function App(): JSX.Element {
       <Header />
       <main>
         <Splash />
-        <div>About - blurb with video</div>
-        <div>Smart Contract - bullet rules with diagram</div>
         <div>How to buy - download metamask</div>
+        <div>About - blurb with video</div>
+        <div>Tokenomics - bullet rules with diagram</div>
         <div>Roadmap</div>
         <Social />
       </main>

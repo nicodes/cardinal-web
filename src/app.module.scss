@@ -7,7 +7,7 @@
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 
-    div {
+    > div {
       height: 100%;
       scroll-snap-align: center;
 
