@@ -3,16 +3,11 @@ import { Header, Splash, Social } from './components';
 import styles from './app.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const headerHeight = '60px'; // this doesn't work in scss
-
 function App(): JSX.Element {
   return (
-    <div className='App'>
-      <Header headerHeight={headerHeight} />
-      <main
-        className={styles.main}
-        style={{ height: `calc(100vh - ${headerHeight})` }}
-      >
+    <div className={`App ${styles.app}`}>
+      <Header />
+      <main>
         <Splash />
         <div>About - blurb with video</div>
         <div>Smart Contract - bullet rules with diagram</div>

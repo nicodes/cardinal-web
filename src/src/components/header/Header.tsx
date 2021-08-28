@@ -1,19 +1,23 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Dropdown, DropdownButton } from 'react-bootstrap';
+
+import { SocialLinks } from '../common';
 import styles from './header.module.scss';
 
-type props = {
-  headerHeight: string;
-};
-
-function Header({ headerHeight }: props): JSX.Element {
+function Header(): JSX.Element {
   return (
-    <header className={styles.header} style={{ height: headerHeight }}>
+    <header className={styles.header}>
       <div>Cardinal Token</div>
-      <Button variant='outline-primary'>Primary</Button>
-      <div>Buy</div>
-      <div>About</div>
-      <div>Price</div>
+      <div className={styles.price}>price</div>
+      <div style={{ marginRight: 'auto', marginLeft: 'auto' }}>
+        <SocialLinks />
+      </div>
+
+      <DropdownButton id='dropdown-basic-button' title='Dropdown button'>
+        <Dropdown.Item href='#/action-1'>Buy</Dropdown.Item>
+        <Dropdown.Item href='#/action-2'>About</Dropdown.Item>
+        <Dropdown.Item href='#/action-3'>Price</Dropdown.Item>
+      </DropdownButton>
     </header>
   );
 }

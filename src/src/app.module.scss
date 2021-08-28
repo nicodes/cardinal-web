@@ -1,17 +1,22 @@
-.main {
-  // height set in style
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+.app {
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content auto;
 
-  div {
-    height: 100%;
-    scroll-snap-align: center;
+  main {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 
-    &:nth-child(even) {
-      background-color: #87ceeb;
-    }
-    &:nth-child(odd) {
-      background-color: #76bee8;
+    div {
+      height: 100%;
+      scroll-snap-align: center;
+
+      &:nth-child(even) {
+        background-color: #87ceeb;
+      }
+      &:nth-child(odd) {
+        background-color: #76bee8;
+      }
     }
   }
 }
