@@ -1,4 +1,5 @@
 import React from 'react';
+import Social from './components/social/Social';
 import styles from './app.module.scss';
 
 // this doesn't work in scss
@@ -20,7 +21,7 @@ function App(): JSX.Element {
         <div>Smart Contract - bullet rules with diagram</div>
         <div>How to buy</div>
         <div>Roadmap</div>
-        <div>Social Links</div>
+        <Social />
       </main>
     </div>
   );
