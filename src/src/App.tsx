@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header, Splash, Social } from './components';
 import styles from './app.module.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const headerHeight = '60px'; // this doesn't work in scss
 
