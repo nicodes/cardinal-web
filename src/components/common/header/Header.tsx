@@ -1,7 +1,7 @@
 import React from 'react';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
 
-import { SocialLinks } from '../common';
+import { SocialLinks } from '..';
 import styles from './header.module.scss';
 
 function Header(): JSX.Element {

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Header, Splash, Social } from './components';
+import { Header } from './components/common';
+import { Splash, Social } from './components/sections';
 import styles from './app.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

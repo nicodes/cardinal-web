@@ -1,5 +1,5 @@
 import React from 'react';
-import { SocialLinks } from '../common';
+import { SocialLinks } from '../../common';
 
 function Social(): JSX.Element {
   return (
