@@ -1,25 +1,21 @@
 import React from 'react';
-import Social from './components/social/Social';
+import { Header, Splash, Social } from './components';
 import styles from './app.module.scss';
 
-// this doesn't work in scss
-const headerHeight = '60px';
+const headerHeight = '60px'; // this doesn't work in scss
 
 function App(): JSX.Element {
   return (
     <div className='App'>
-      <header style={{ height: headerHeight }}>Cardinal Token</header>
+      <Header headerHeight={headerHeight} />
       <main
         className={styles.main}
         style={{ height: `calc(100vh - ${headerHeight})` }}
       >
-        <div>
-          <h1>Cardinal Token</h1>
-          <h2>Cardinals Soar</h2>
-        </div>
+        <Splash />
         <div>About - blurb with video</div>
         <div>Smart Contract - bullet rules with diagram</div>
-        <div>How to buy</div>
+        <div>How to buy - download metamask</div>
         <div>Roadmap</div>
         <Social />
       </main>
