@@ -1,0 +1,22 @@
+.main {
+  // height set in style
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+
+  h1,
+  h2 {
+    color: white;
+  }
+
+  div {
+    height: 100%;
+    scroll-snap-align: center;
+
+    &:nth-child(even) {
+      background-color: #87ceeb;
+    }
+    &:nth-child(odd) {
+      background-color: #76bee8;
+    }
+  }
+}
