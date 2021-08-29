@@ -13,11 +13,15 @@ function Tokenomics(): JSX.Element {
         </li>
         <li>
           <span className={styles.bold}>Deflationary: </span>
-          Fixed supply of 45,000,000,000
+          Supply fixed at 1,000,000
         </li>
         <li>
           <span className={styles.bold}>Liquidity: </span>
-          Automatic liquidity contributions
+          Automatic pool contributions
+        </li>
+        <li>
+          <span className={styles.bold}>Whale Deterrence: </span>
+          On sells over {'1%'} supply
         </li>
       </ul>
       <img src={graphic} />
