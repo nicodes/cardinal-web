@@ -1,31 +1,49 @@
 .splash {
   display: grid;
-  grid-template-rows: min-content min-content auto min-content auto;
+  grid-template-rows: min-content min-content min-content auto min-content auto;
 
-  > * {
-    margin-right: auto;
-    margin-left: auto;
+  // padding on first elements
+  > :first-child,
+  > :nth-child(2),
+  > :nth-child(3) {
+    margin: 3rem auto 0 auto;
+  }
+
+  // address
+  > :nth-child(2) {
+    display: flex;
+  }
+
+  // buttons
+  > :last-child {
+    display: grid;
+    grid-template-columns: auto 14rem 14rem auto;
+
+    * {
+      font-size: 2em;
+    }
+
+    // first button
+    :nth-child(2) {
+      margin-right: 1em;
+    }
+
+    // second button
+    :nth-child(3) {
+      margin-left: 1em;
+    }
   }
 
   h1,
   h2 {
     color: white;
-    margin-top: 1em;
+    // margin-top: 1em;
   }
   h1 {
     font-size: 4em;
   }
   h2 {
     font-size: 1.6em;
-  }
-
-  img {
-    margin-top: 1em;
-  }
-}
-
-.buttons {
-  :first-child {
-    margin-right: 1em;
+    margin-right: 1rem;
   }
 }
