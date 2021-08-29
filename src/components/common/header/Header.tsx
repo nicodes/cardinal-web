@@ -5,7 +5,8 @@ import { CommunityLinks } from '..'; // from common
 import styles from './header.module.scss';
 import logo from '../../../assets/logo.png';
 
-function Header(): JSX.Element {
+// TODO fix any type
+function Header({ refs }: any): JSX.Element {
   return (
     <header className={styles.header}>
       <img src={logo} />
@@ -14,12 +15,23 @@ function Header(): JSX.Element {
       <div className={styles.price}>price</div>
 
       <CommunityLinks />
-      <DropdownButton id='dropdown-basic-button' title='Dropdown button'>
-        <Dropdown.Item href='#/action-3'>Buy</Dropdown.Item>
-        <Dropdown.Item href='#/action-2'>About</Dropdown.Item>
-        <Dropdown.Item href='#/action-2'>Tokenomics</Dropdown.Item>
-        <Dropdown.Item href='#/action-3'>Roadmap</Dropdown.Item>
-        <Dropdown.Item href='#/action-3'>Community</Dropdown.Item>
+      <DropdownButton id='dropdown-basic-button' title=''>
+        <Dropdown.Item onClick={() => refs.buyRef.current.scrollIntoView()}>
+          Buy
+        </Dropdown.Item>
+        <Dropdown.Item
+          onClick={() => refs.tokenomicsRef.current.scrollIntoView()}
+        >
+          Tokenomics
+        </Dropdown.Item>
+        <Dropdown.Item onClick={() => refs.roadmapRef.current.scrollIntoView()}>
+          Roadmap
+        </Dropdown.Item>
+        <Dropdown.Item
+          onClick={() => refs.communityRef.current.scrollIntoView()}
+        >
+          Community
+        </Dropdown.Item>
         <Dropdown.Divider />
         <Dropdown.Item href='#/action-3'>Dashboard</Dropdown.Item>
         <Dropdown.Item href='#/action-3'>Whitepaper</Dropdown.Item>

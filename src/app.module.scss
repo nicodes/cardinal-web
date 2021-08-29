@@ -5,6 +5,7 @@
 
   main {
     overflow-y: scroll;
+    // scroll-behavior: smooth; // TODO bug fix
     scroll-snap-type: y mandatory;
 
     > div {
