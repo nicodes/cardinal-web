@@ -1,10 +1,27 @@
 import React from 'react';
-import { CommunityLinks } from '../../common';
+import { Button } from 'react-bootstrap';
 
-function Community(): JSX.Element {
+import { CommunityLinks } from '../../common';
+import styles from './community.module.scss';
+
+function Community({ splashRef }: { splashRef: any }): JSX.Element {
   return (
-    <div>
+    <div className={styles.community}>
+      <h1>Community</h1>
+
+      <h2>Please join our growing community!</h2>
+
       <CommunityLinks />
+
+      {/* padding */}
+      <div></div>
+
+      <Button
+        variant='outline-secondary'
+        onClick={() => splashRef.current.scrollIntoView()}
+      >
+        ↑
+      </Button>
     </div>
   );
 }

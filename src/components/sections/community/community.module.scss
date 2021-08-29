@@ -1,0 +1,32 @@
+.community {
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content min-content min-content auto min-content auto;
+
+  // padding on first elements
+  > :first-child,
+  > :nth-child(2),
+  > :nth-child(3) {
+    margin: 3rem auto 0 auto;
+  }
+
+  h1,
+  h2 {
+    color: white;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  // last button
+  > :last-child {
+    font-size: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
