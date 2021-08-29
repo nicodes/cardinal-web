@@ -1,0 +1,17 @@
+.tokenomics {
+  display: grid;
+
+  > * {
+    margin: auto;
+  }
+
+  h1 {
+    color: white;
+  }
+}
+
+.buttons {
+  :first-child {
+    margin-right: 1em;
+  }
+}
