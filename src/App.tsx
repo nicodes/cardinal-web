@@ -16,7 +16,7 @@ function App(): JSX.Element {
     <div className={`App ${styles.app}`}>
       <Header refs={{ buyRef, tokenomicsRef, roadmapRef, communityRef }} />
       <main>
-        <Splash tokenAddress={tokenAddress} />
+        <Splash tokenAddress={tokenAddress} buyRef={buyRef} />
         <div ref={buyRef}>
           <Buy tokenAddress={tokenAddress} />
         </div>
