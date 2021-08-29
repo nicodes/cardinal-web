@@ -24,9 +24,9 @@ function Header({ refs }: any): JSX.Element {
         >
           Tokenomics
         </Dropdown.Item>
-        <Dropdown.Item onClick={() => refs.roadmapRef.current.scrollIntoView()}>
+        {/* <Dropdown.Item onClick={() => refs.roadmapRef.current.scrollIntoView()}>
           Roadmap
-        </Dropdown.Item>
+        </Dropdown.Item> */}
         <Dropdown.Item
           onClick={() => refs.communityRef.current.scrollIntoView()}
         >
