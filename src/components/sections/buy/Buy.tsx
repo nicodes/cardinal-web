@@ -1,4 +1,6 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
+
 import styles from './buy.module.scss';
 import graphic from '../../../assets/metamask.png';
 
@@ -25,7 +27,15 @@ function Buy({ tokenAddress }: { tokenAddress: string }): JSX.Element {
           Use <a href='https://pancakeswap.finance/'>Pancakeswap</a> to exchange
           using the address:
         </li>
-        <div>{tokenAddress}</div>
+        <Button
+          variant='primary'
+          onClick={() => {
+            navigator.clipboard.writeText(tokenAddress);
+            // trigger address coppied
+          }}
+        >
+          {tokenAddress}
+        </Button>
       </ul>
     </div>
   );

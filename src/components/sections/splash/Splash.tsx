@@ -14,7 +14,19 @@ function Social({
   return (
     <div className={styles.splash}>
       <h1>Cardinal Token</h1>
-      <h2>Address: {tokenAddress}</h2>
+      <div>
+        <h2>Address:</h2>
+        <Button
+          variant='primary'
+          onClick={() => {
+            navigator.clipboard.writeText(tokenAddress);
+            // trigger address coppied
+          }}
+        >
+          {tokenAddress}
+        </Button>
+      </div>
+
       <img src={logo} />
       <div className={styles.buttons}>
         <Button
