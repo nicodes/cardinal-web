@@ -1,12 +1,26 @@
 .splash {
   display: grid;
+  grid-template-rows: min-content min-content auto min-content auto;
 
   > * {
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  h1 {
+  h1,
+  h2 {
     color: white;
+    margin-top: 1em;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+
+  img {
+    margin-top: 1em;
   }
 }
 
