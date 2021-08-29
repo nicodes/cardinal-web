@@ -9,7 +9,13 @@ function Buy({ tokenAddress }: { tokenAddress: string }): JSX.Element {
       <img src={graphic} />
       <ul>
         <li>
-          Download the <a href='https://metamask.io/'>Metamask App</a>
+          Download the <a href='https://metamask.io/'>Metamask</a> App
+        </li>
+        <li>
+          Configure Metamask to use{' '}
+          <a href='https://docs.binance.org/smart-chain/wallet/metamask.html'>
+            BSC
+          </a>
         </li>
         <li>
           Buy BNBs (<a href='https://binance.us/'>Binance</a>) and send to
