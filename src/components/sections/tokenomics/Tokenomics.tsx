@@ -6,7 +6,7 @@ function Tokenomics(): JSX.Element {
   return (
     <div className={styles.tokenomics}>
       <h1>Tokenomics</h1>
-      <ul className={styles.bullets}>
+      <ul>
         <li>
           <span className={styles.bold}>Rewards: </span>
           Hourly ADA reflections
