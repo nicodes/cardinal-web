@@ -21,7 +21,7 @@ function Tokenomics(): JSX.Element {
         </li>
         <li>
           <span className={styles.bold}>Whale Deterrence: </span>
-          On sells over {'1%'} supply
+          On sells over 1% supply
         </li>
       </ul>
       <img src={graphic} />
