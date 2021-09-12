@@ -1,22 +1,25 @@
 .header {
-  display: flex;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
+  display: grid;
+  grid-template-columns: min-content min-content min-content auto min-content min-content;
+  grid-gap: 2em;
+  margin: 0.5em 1em;
 
   > * {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 2em;
+    margin: auto 0;
 
-    &:nth-child(4) {
-      margin-right: auto;
+    // title
+    &:nth-child(2) {
+      font-weight: bold;
     }
 
-    &:last-child {
-      margin-right: 2em;
+    // title and price
+    &:nth-child(2),
+    &:nth-child(2) {
+      white-space: nowrap;
     }
   }
 
+  // logo
   img {
     height: 3em;
   }

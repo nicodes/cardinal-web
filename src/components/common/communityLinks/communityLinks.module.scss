@@ -1,5 +1,4 @@
 .CommunityLinks {
-  :not(:first-child) {
-    margin-left: 0.5em;
-  }
+  display: flex;
+  grid-gap: 0.2em;
 }
