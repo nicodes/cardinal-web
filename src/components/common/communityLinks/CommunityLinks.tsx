@@ -3,7 +3,7 @@ import styles from './communityLinks.module.scss';
 
 function CommunityLinks(): JSX.Element {
   return (
-    <div className={styles.CommunityLinks}>
+    <div className={styles['community-links']}>
       {/* TODO vanity link */}
       <a href='https://discord.gg/GBSUgEGj/'>
         <img
