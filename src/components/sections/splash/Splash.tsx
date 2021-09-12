@@ -29,13 +29,7 @@ function Social({
 
       <img src={logo} />
 
-      {/* grid spacing */}
-      <div></div>
-
       <div>
-        {/* grid spacing */}
-        <div></div>
-
         <Button
           variant='primary'
           onClick={() => buyRef.current.scrollIntoView()}
