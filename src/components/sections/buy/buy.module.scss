@@ -1,25 +1,14 @@
 .buy {
+  height: 100%;
   display: grid;
-  grid-template-columns: 50% 50%;
   grid-template-rows: min-content auto;
+  grid-gap: 2em;
 
   h1 {
+    margin: 0 auto;
     grid-column: span 2;
     font-size: 4rem;
     color: white;
-    margin: 3rem auto 6rem auto;
-  }
-
-  ul,
-  img {
-    margin: auto;
-
-    &:nth-child(2) {
-      margin-right: 6rem;
-    }
-    &:last-child {
-      margin-left: 6rem;
-    }
   }
 
   ul {
@@ -27,7 +16,8 @@
   }
 
   img {
-    width: 40%;
+    width: 100%;
+    max-width: 420px;
   }
 }
 

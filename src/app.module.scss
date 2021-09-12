@@ -11,6 +11,7 @@
     > div {
       height: 100%;
       scroll-snap-align: center;
+      padding: 2em;
 
       &:nth-child(even) {
         background-color: #87ceeb;
